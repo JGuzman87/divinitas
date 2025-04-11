@@ -5,7 +5,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
   return (
     <div className='flex justify-end'>
-        <p>{`© ${currentYear} Davinitas Inc. All rights reserved worldwide`}</p>
+        <p>{`© ${currentYear} Divinitas Inc. All rights reserved worldwide`}</p>
     </div>
   )
 }

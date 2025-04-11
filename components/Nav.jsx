@@ -12,7 +12,7 @@ const Nav = () => {
       className="flex justify-between"
 
     >
-      <Link href={"/"}>Davinitas</Link>
+      <Link href={"/"}>Divinitas</Link>
       <ul className="w-md flex justify-center gap-5">
         {linkArr.map((arr) => (
           <li key={arr}>
