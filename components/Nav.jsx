@@ -8,7 +8,7 @@ const Nav = () => {
     const linkArr = ['about', 'ourWork', 'resources', 'services'];
 
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between p-8 ">
       <Link href={"/"}>
         <h1>Divinitas</h1>
       </Link>

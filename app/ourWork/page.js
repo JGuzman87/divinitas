@@ -2,7 +2,7 @@ import React from 'react'
 
 const OurWork = () => {
   return (
-    <div>OurWork</div>
+    <div>Our-work</div>
   )
 }
 
