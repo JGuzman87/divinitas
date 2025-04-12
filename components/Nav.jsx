@@ -9,7 +9,10 @@ const Nav = () => {
 
   return (
     <div className="navbar bg-base-100 shadow-sm p-3">
-      <div className="navbar-start">
+      <Link href={"/"}>
+        <h1>Divinitas</h1>
+      </Link>
+      <div className="navbar-end">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -39,9 +42,6 @@ const Nav = () => {
             ))}
           </ul>
         </div>
-        <Link href={"/"}>
-          <h1>Divinitas</h1>
-        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="gap-3.5 flex justify-end">
