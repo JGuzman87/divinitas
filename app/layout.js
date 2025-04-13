@@ -1,4 +1,5 @@
-import {  Roboto } from "next/font/google";
+import Transition from "@/components/Transition";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
 import Nav from "@/components/Nav";
@@ -21,11 +22,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="dracula">
       <body
-        className={`${roboto.variable} antialiased flex flex-col justify-between` }
+        className={`${roboto.variable} antialiased flex flex-col justify-between`}
       >
         <Nav />
-        {children}
-      <Footer />
+
+        <Transition>{children}</Transition>
+
+        <Footer />
       </body>
     </html>
   );

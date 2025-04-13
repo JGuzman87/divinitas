@@ -14,7 +14,7 @@ const Nav = () => {
       </Link>
       <div className="navbar-end">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -43,7 +43,7 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end hidden md:flex">
         <ul className="gap-3.5 flex justify-end">
           {linkArr.map((arr) => (
             <li key={arr}>

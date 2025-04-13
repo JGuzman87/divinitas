@@ -69,9 +69,7 @@ const Footer = () => {
       </nav>
       <p className="flex justify-end self-end">{`© ${currentYear} Divinitas Inc. All rights reserved worldwide`}</p>
     </footer>
-    // <div>
-    //   <p className="flex justify-end">{`© ${currentYear} Divinitas Inc. All rights reserved worldwide`}</p>
-    // </div>
+ 
   );
 };
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import Form from '@/components/Form';
+import Transition from '../../components/Transition';
 
 const AboutPage = () => {
   return (
-    <div>
-      
-    </div>
+    <Transition>
+      <h1>About Divinitas</h1>
+    </Transition>
   )
 }
 

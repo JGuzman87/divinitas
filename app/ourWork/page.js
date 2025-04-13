@@ -1,8 +1,9 @@
 import React from 'react'
+import Transition from '../../components/Transition';
 
 const OurWork = () => {
   return (
-    <div>Our-work</div>
+    <Transition>Our-work</Transition>
   )
 }
 
