@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="sunset">
+    <html lang="en" data-theme="dracula">
       <body
         className={`${roboto.variable} antialiased flex flex-col justify-between` }
       >

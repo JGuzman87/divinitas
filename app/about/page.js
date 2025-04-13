@@ -3,7 +3,9 @@ import Form from '@/components/Form';
 
 const AboutPage = () => {
   return (
-    <div><Form /></div>
+    <div>
+      
+    </div>
   )
 }
 

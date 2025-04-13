@@ -29,7 +29,7 @@ const Form = () => {
             value={formData.first}
             type="text"
             placeholder="First Name"
-            className="w-full border rounded-md px-4 py-2 text-gray-700"
+            className="w-full border rounded-md px-4 py-2 text-gray-400"
             onChange={handleChange}
             required
           />
@@ -41,7 +41,7 @@ const Form = () => {
             value={formData.last}
             type="text"
             placeholder="Last Name"
-            className="w-full border rounded-md px-4 py-2 text-gray-700"
+            className="w-full border rounded-md px-4 py-2 text-gray-400"
             onChange={handleChange}
             required
           />
@@ -55,7 +55,7 @@ const Form = () => {
           value={formData.company}
           type="text"
           placeholder="Company"
-          className="w-full border rounded-md px-4 py-2 text-gray-700"
+          className="w-full border rounded-md px-4 py-2 text-gray-400"
           onChange={handleChange}
           required
         />
@@ -67,7 +67,7 @@ const Form = () => {
          value={formData.email}
           type="email"
           placeholder="Email Address"
-          className="w-full border rounded-md px-4 py-2 text-gray-700"
+          className="w-full border rounded-md px-4 py-2 text-gray-400"
           onChange={handleChange}
           required
         />
@@ -79,7 +79,7 @@ const Form = () => {
          value={formData.phone}
           type="tel"
           placeholder="Phone"
-          className="w-full border rounded-md px-4 py-2 text-gray-700"
+          className="w-full border rounded-md px-4 py-2 text-gray-400"
           onChange={handleChange}
           required
         />
@@ -91,7 +91,7 @@ const Form = () => {
          value={formData.date_time}
           type="text"
           placeholder="Preferred date and time for a conference call"
-          className="w-full border rounded-md px-4 py-2 text-gray-700"
+          className="w-full border rounded-md px-4 py-2 text-gray-400"
           onChange={handleChange}
           required
         />

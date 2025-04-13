@@ -33,7 +33,7 @@ const Nav = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow "
           >
             {linkArr.map((arr) => (
               <li key={arr}>
@@ -47,7 +47,9 @@ const Nav = () => {
         <ul className="gap-3.5 flex justify-end">
           {linkArr.map((arr) => (
             <li key={arr}>
-              <Link href={"/" + arr}>{arr.toUpperCase()}</Link>
+              <Link className=" hover:text-orange-400 font-extrabold" href={"/" + arr}>
+                {arr.toUpperCase()}{" "}
+              </Link>
             </li>
           ))}
         </ul>
