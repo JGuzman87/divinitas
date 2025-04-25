@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm p-3">
       <Link href={"/"}>
-        <h1>Divinitas</h1>
+        <h1 className='hover:text-orange-400'>Divinitas</h1>
       </Link>
       <div className="navbar-end">
         <div className="dropdown">

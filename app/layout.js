@@ -21,12 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="dracula">
-      <body
-        className={`${roboto.variable} antialiased flex flex-col justify-between`}
-      >
-        <Nav />
-
-        <Transition>{children}</Transition>
+      <body className={`${roboto.variable} antialiased flex flex-col p-1 gap-8`}>
+        <Transition>
+          <Nav />
+          <main>{children}</main>
+        </Transition>
 
         <Footer />
       </body>
