@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import './Form.css';
 
 const Form = () => {
@@ -31,6 +31,14 @@ const Form = () => {
           const data = await res.json();
           if (data.success) {
             alert("Form submitted successfully!");
+            setFormData({
+              first: "",
+              last: "",
+              company: "",
+              email: "",
+              phone: "",
+              date_time: "",
+            });
           } else {
             alert("Submission failed");
           }
