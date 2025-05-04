@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10 mt-auto">
       <nav>
         <h2 className="footer-title">Navigate</h2>
-        <ul className="flex flex-col justify-evenly">
+        <ul className="flex md:flex-col flex-wrap justify-evenly">
           {linkArr.map((link) => (
             <li className="tab tab-active " key={link}>
               <Link href={"/" + link}>
