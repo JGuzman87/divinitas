@@ -47,7 +47,7 @@ const Nav = () => {
         <ul className="gap-3.5 flex justify-end">
           {linkArr.map((arr) => (
             <li key={arr}>
-              <Link className=" hover:text-orange-400 font-extrabold" href={"/" + arr}>
+              <Link className=" hover:text-orange-400 font-extrabold hover:underline" href={"/" + arr}>
                 {arr.toUpperCase()}{" "}
               </Link>
             </li>
