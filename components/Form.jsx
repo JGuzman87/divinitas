@@ -18,8 +18,27 @@ const Form = () => {
   return (
     <form
       className="max-w-2xl mx-auto p-6 bg-base-200"
-      onSubmit={(e) => {
-        e.preventDefault(); console.log(formData);
+      onSubmit={async (e) => {
+        e.preventDefault(); 
+        console.log(formData);
+        try {
+          const res = await fetch('/api/form', {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(formData),
+          });
+
+          const data = await res.json();
+          if (data.success) {
+            alert("Form submitted successfully!");
+          } else {
+            alert("Submission failed");
+          }
+        } catch(err) {
+          console.error("Error:", err);
+          alert("Somethin went wrong.");
+        }
+
       }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

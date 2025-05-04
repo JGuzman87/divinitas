@@ -37,7 +37,7 @@ const Nav = () => {
           >
             {linkArr.map((arr) => (
               <li key={arr}>
-                <Link href={"/" + arr}>{arr.toUpperCase()}</Link>
+                <Link href={"/" + arr}>{arr}</Link>
               </li>
             ))}
           </ul>

@@ -11,6 +11,8 @@
   "dependencies": {
     "daisyui": "^5.0.17",
     "framer-motion": "^12.6.5",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.14.1",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
