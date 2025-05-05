@@ -5,13 +5,13 @@ const Footer = () => {
    const linkArr = ["about", "ourWork", "resources", "services"];
   return (
     <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10 mt-auto">
-      <nav>
-        <h2 className="footer-title">Navigate</h2>
-        <ul className="flex md:flex-col flex-wrap justify-evenly">
+      <nav className="flex flex-col ">
+        <h2 className="footer-title ">Navigate</h2>
+        <ul className="grid grid-cols-2 md:grid-cols-1">
           {linkArr.map((link) => (
-            <li className="tab tab-active " key={link}>
+            <li className="tab tab-active justify-start" key={link}>
               <Link href={"/" + link}>
-                <p className="hover:text-orange-300">{link.toUpperCase()}</p>
+                <p className="hover:text-orange">{link.toUpperCase()}</p>
               </Link>
             </li>
           ))}
