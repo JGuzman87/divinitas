@@ -10,7 +10,7 @@ const Footer = () => {
         <ul className="grid grid-cols-2 md:grid-cols-1">
           {linkArr.map((link) => (
             <li className="tab tab-active justify-start" key={link}>
-              <Link href={"/" + link.replace(/\s+/g, "")}>
+              <Link href={"/" + link.replace(/\s+/g, '')}>
                 <p className="hover:text-orange capitalize">{link}</p>
               </Link>
             </li>

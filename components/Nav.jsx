@@ -37,7 +37,7 @@ const Nav = () => {
           >
             {linkArr.map((link) => (
               <li key={link}>
-                <Link href={"/" + link.replace(/\s+/g, "")}>{link}</Link>
+                <Link href={"/" + link.replace(/\s+/g, '')}>{link}</Link>
               </li>
             ))}
           </ul>
@@ -45,14 +45,14 @@ const Nav = () => {
       </div>
       <div className="navbar-end hidden md:flex">
         <ul className="gap-3.5 flex justify-end tabs-border" robe="tablist">
-          {linkArr.map((arr) => (
-            <li key={arr}>
+          {linkArr.map((link) => (
+            <li key={link}>
               <Link
                 role="tab"
                 className="tab tab-active hover:text-orange-400 font-extrabold capitalize"
-                href={"/" + arr.replace(/\s+/g, "")}
+                href={"/" + link.replace(/\s+/g, '')}
               >
-                {arr}{" "}
+                {link}{" "}
               </Link>
             </li>
           ))}
