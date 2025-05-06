@@ -1,15 +1,13 @@
-import React from 'react'
-import Transition from '../../components/Transition';
-import Carousel from '@/components/Carousel';
+import React from "react";
+import Transition from "../../components/Transition";
+import Carousel from "@/components/Carousel";
 
-const OurWork = () => {
+const Ourwork = () => {
   return (
     <Transition>
-    
-        <Carousel />
- 
+      <Carousel />
     </Transition>
   );
-}
+};
 
-export default OurWork;
+export default Ourwork;
