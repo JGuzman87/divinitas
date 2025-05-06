@@ -49,7 +49,7 @@ const Nav = () => {
             <li key={link}>
               <Link
                 role="tab"
-                className="tab tab-active hover:text-orange-400 font-extrabold capitalize"
+                className="tab tab-active hover:text-orange-400 font-extrabold text-nowrap capitalize"
                 href={"/" + link.replace(/\s+/g, '')}
               >
                 {link}{" "}
