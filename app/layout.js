@@ -1,4 +1,4 @@
-import Transition from "@/components/Transition";
+
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="sunset">
       <body className={`${roboto.variable} antialiased flex flex-col p-1 gap-8`}>
-        <Transition>
+        
           <Nav />
-          <main>{children}</main>
-        </Transition>
+          {children}
+        
 
         <Footer />
       </body>

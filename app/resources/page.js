@@ -1,10 +1,23 @@
-import React from 'react'
-import Transition from '../../components/Transition';
+"use client";
+
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Resources = () => {
+  const pathname = usePathname();
   return (
-    <Transition>Resources</Transition>
-  )
-}
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={pathname}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1>Resources</h1>
+      </motion.div>
+    </AnimatePresence>
+  );
+};
 
 export default Resources;
