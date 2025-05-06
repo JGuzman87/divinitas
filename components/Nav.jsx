@@ -5,12 +5,12 @@ import Link from 'next/link';
 
 const Nav = () => {
 
-    const linkArr = ['about', 'ourWork', 'resources', 'services'];
+    const linkArr = ['about', 'our work', 'resources', 'services'];
 
   return (
-    <div className="flex flex-row-reverse md:flex-row justify-around navbar bg-base-100 shadow-sm p-3">
+    <div className="flex flex-row-reverse md:flex-row justify-evenly navbar bg-base-100 shadow-sm p-3">
       <Link href={"/"}>
-        <h1 className="hover:text-orange-300">Divinitas</h1>
+        <h1 className="hover:text-orange-300 justify-self-center">Divinitas</h1>
       </Link>
       <div className="navbar-start">
         <div className="dropdown">
@@ -33,29 +33,26 @@ const Nav = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 "
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 capitalize"
           >
             {linkArr.map((link) => (
               <li key={link}>
-                <Link href={"/" + link}>{link}</Link>
+                <Link href={"/" + link.replace(/\s+/g, "")}>{link}</Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
       <div className="navbar-end hidden md:flex">
-        <ul
-          className="gap-3.5 flex justify-end tabs-border"
-          robe="tablist"
-        >
+        <ul className="gap-3.5 flex justify-end tabs-border" robe="tablist">
           {linkArr.map((arr) => (
             <li key={arr}>
               <Link
                 role="tab"
-                className="tab tab-active hover:text-orange-400 font-extrabold "
-                href={"/" + arr}
+                className="tab tab-active hover:text-orange-400 font-extrabold capitalize"
+                href={"/" + arr.replace(/\s+/g, "")}
               >
-                {arr.toUpperCase()}{" "}
+                {arr}{" "}
               </Link>
             </li>
           ))}

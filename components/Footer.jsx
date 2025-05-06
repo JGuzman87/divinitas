@@ -2,7 +2,7 @@
 import Link from "next/link";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-   const linkArr = ["about", "ourWork", "resources", "services"];
+   const linkArr = ["about", "our work", "resources", "services"];
   return (
     <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10 mt-auto">
       <nav className="flex flex-col ">
@@ -10,8 +10,8 @@ const Footer = () => {
         <ul className="grid grid-cols-2 md:grid-cols-1">
           {linkArr.map((link) => (
             <li className="tab tab-active justify-start" key={link}>
-              <Link href={"/" + link}>
-                <p className="hover:text-orange">{link.toUpperCase()}</p>
+              <Link href={"/" + link.replace(/\s+/g, "")}>
+                <p className="hover:text-orange capitalize">{link}</p>
               </Link>
             </li>
           ))}

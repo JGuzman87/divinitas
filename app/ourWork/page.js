@@ -4,11 +4,11 @@ import Carousel from '@/components/Carousel';
 
 const OurWork = () => {
   return (
- 
-      <Transition>
+    <Transition>
+      <div>
         <Carousel />
-      </Transition>
-
+      </div>
+    </Transition>
   );
 }
 
