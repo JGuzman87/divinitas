@@ -6,19 +6,19 @@ const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10 mt-auto">
       <nav className="flex flex-col ">
-        <h2 className="footer-title ">Navigate</h2>
-        <ul className="grid grid-cols-2 md:grid-cols-1">
+        <h2 className="uppercase">Navigate</h2>
+        <ul className="grid grid-cols-1 gap-4">
           {linkArr.map((link) => (
-            <li className="tab tab-active justify-start" key={link}>
+            <li className="" key={link}>
               <Link href={"/" + link.replace(/\s+/g, '')}>
-                <p className="hover:text-orange capitalize">{link}</p>
+                <p className="hover:text-orange-300 capitalize">{link}</p>
               </Link>
             </li>
           ))}
         </ul>
       </nav>
       <div>
-        <h2 className="footer-title">Contact Us</h2>
+        <h2 className="uppercase">Contact Us</h2>
         <p>Phone: 407-601-4606</p>
         <p>Email: steve@divinitasnow.com </p>
         <h3>Divinitas</h3>
@@ -26,7 +26,7 @@ const Footer = () => {
         <p>Orlando, FL 32909</p>
       </div>
       <nav className=" flex flex-col justify-center">
-        <h6 className="footer-title flex self-center">Social</h6>
+        <h6 className="uppercase flex self-center">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <a href="https://www.facebook.com/DivinitasDisplays/?ref=hl#">
             <svg

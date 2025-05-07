@@ -12,37 +12,63 @@ const Nav = () => {
       <Link href={"/"}>
         <h1 className="hover:text-orange-300 justify-self-center">Divinitas</h1>
       </Link>
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 hover:text-orange-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 capitalize"
+      <div className="drawer">
+        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+          {/* Page content here */}
+          <label
+            htmlFor="my-drawer"
+            className="btn btn-circle swap swap-rotate md:hidden"
           >
+            <input type="checkbox" />
+
+            {/* hamburger icon */}
+            <svg
+              className="swap-off fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+            </svg>
+
+            {/* close icon */}
+            <svg
+              className="swap-on fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+            </svg>
+          </label>
+        </div>
+        <div className="drawer-side">
+          <label
+            htmlFor="my-drawer"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            {/* Sidebar content here */}
             {linkArr.map((link) => (
               <li key={link}>
-                <Link href={"/" + link.replace(/\s+/g, '')}>{link}</Link>
+                <Link
+                  href={"/" + link.replace(/\s+/g, "")}
+                  onClick={() => {
+                    document.getElementById("my-drawer").checked = false;
+                  }}
+                >
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
+     
       <div className="navbar-end hidden md:flex">
         <ul className="gap-3.5 flex justify-end tabs-border" robe="tablist">
           {linkArr.map((link) => (
@@ -50,7 +76,7 @@ const Nav = () => {
               <Link
                 role="tab"
                 className="tab tab-active hover:text-orange-400 font-extrabold text-nowrap capitalize"
-                href={"/" + link.replace(/\s+/g, '')}
+                href={"/" + link.replace(/\s+/g, "")}
               >
                 {link}{" "}
               </Link>
