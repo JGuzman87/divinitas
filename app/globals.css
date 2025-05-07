@@ -2,12 +2,12 @@
 @plugin "daisyui" {
     themes: all;
 }
-
+     
 body {
 
 min-height: 100vh;
 font-family: var(--font-roboto), sans-serif;
-  
+
 }
 
 h1 {

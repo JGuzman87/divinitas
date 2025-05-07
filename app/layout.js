@@ -1,4 +1,3 @@
-
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -6,11 +5,11 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 const roboto = Roboto({
-  weight: ["400", "700"],
-  style: ["normal"],
+  weight: ["400"],
+
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-roboto",
+
+  variable: "--font-roboto-light",
 });
 
 export const metadata = {
@@ -20,8 +19,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="sunset">
-      <body className={`${roboto.variable} antialiased flex flex-col p-1 gap-8`}>
+    <html lang="en" data-theme="luxury">
+      
+      <body className={`${roboto.className} flex flex-col p-1 gap-8`}>
         
           <Nav />
           {children}

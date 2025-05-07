@@ -8,13 +8,14 @@ const Nav = () => {
     const linkArr = ['about', 'our work', 'resources', 'services'];
 
   return (
-    <div className="flex flex-row-reverse md:flex-row justify-evenly navbar bg-base-100 shadow-sm p-3">
+    <div className="flex flex-row md:flex-row justify-evenly navbar bg-base-100 shadow-sm p-3">
       <Link href={"/"}>
         <h1 className="hover:text-orange-300 justify-self-center">Divinitas</h1>
       </Link>
       <div className="drawer z-[9999]">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content">
+
+        <div className="drawer-content flex justify-end">
           {/* Page content here */}
           <label
             htmlFor="my-drawer"

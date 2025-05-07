@@ -6,18 +6,18 @@ import { usePathname } from "next/navigation";
 const AboutPage = () => {
     const pathname = usePathname();
   return (
-      <AnimatePresence mode="wait">
-         <motion.div
-           key={pathname}
-           initial={{ opacity: 0, y: 20 }}
-           animate={{ opacity: 1, y: 0 }}
-           exit={{ opacity: 0, y: -20 }}
-           transition={{ duration: 0.5 }}
-         >
-          <h1>About Divinitas</h1>
-         </motion.div>
-         </AnimatePresence>
-  )
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={pathname}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className="font-roboto">About Divinitas</h1>
+      </motion.div>
+    </AnimatePresence>
+  );
 }
 
 export default AboutPage;
