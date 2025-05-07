@@ -12,7 +12,7 @@ const Nav = () => {
       <Link href={"/"}>
         <h1 className="hover:text-orange-300 justify-self-center">Divinitas</h1>
       </Link>
-      <div className="drawer">
+      <div className="drawer z-[9999]">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           {/* Page content here */}
@@ -45,7 +45,7 @@ const Nav = () => {
             </svg>
           </label>
         </div>
-        <div className="drawer-side">
+        <div className="drawer-side ">
           <label
             htmlFor="my-drawer"
             aria-label="close sidebar"
@@ -68,7 +68,7 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-     
+
       <div className="navbar-end hidden md:flex">
         <ul className="gap-3.5 flex justify-end tabs-border" robe="tablist">
           {linkArr.map((link) => (
