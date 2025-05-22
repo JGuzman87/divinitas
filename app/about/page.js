@@ -13,15 +13,16 @@ const AboutPage = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
+        className="flex flex-col gap-4 p-4 "
       >
-        <h1 className="font-roboto">About Divinitas</h1>
-        <p>
+        <h1 className="font-roboto self-center">About Divinitas</h1>
+        <p className="tracking-wide">
           For most companies, managing a trade show program is difficult enough
           under the best of circumstances. Unfortunately, many display providers
           compound the challenge by providing substandard service. You don’t
           have to settle for incomplete or unresponsive service.
         </p>
-        <p>
+        <p className="tracking-wide">
           Divinitas is the kind of brand experience partner you’ve been waiting
           for. Unlike those providers, Divinitas is a customer-centric business
           devoted to making your experiential program less stressful and more
