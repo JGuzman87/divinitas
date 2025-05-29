@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import Form from "@/components/Form";
 
 const AboutPage = () => {
     const pathname = usePathname();
@@ -44,6 +45,10 @@ const AboutPage = () => {
           </li>
           <li>Failure to fully deliver on approved design and services</li>
         </ul>
+        <div className="flex flex-col max-w-1/2 self-center">
+          <h2 className="text-center">Contact Us</h2>
+          <Form />
+        </div>
       </motion.div>
     </AnimatePresence>
   );
