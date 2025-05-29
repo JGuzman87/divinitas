@@ -45,7 +45,7 @@ const AboutPage = () => {
           </li>
           <li>Failure to fully deliver on approved design and services</li>
         </ul>
-        <div className="flex flex-col max-w-1/2 self-center">
+        <div className="flex flex-col md:max-w-1/2 self-center">
           <h2 className="text-center">Contact Us</h2>
           <Form />
         </div>
